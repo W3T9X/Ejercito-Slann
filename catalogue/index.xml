@@ -1,0 +1,23 @@
+<index>
+  <dataIndex>
+    <gameSystemId>slann</gameSystemId>
+    <gameSystemName>Slann Army</gameSystemName>
+    <gameSystemRevision>1</gameSystemRevision>
+    <gameSystemBattleScribeVersion>2.03</gameSystemBattleScribeVersion>
+    <gameSystemLastUpdated>2024-10-09</gameSystemLastUpdated>
+    <repositoryName>Slann Armies Repo</repositoryName>
+    <repositoryVersion>1</repositoryVersion>
+    <dataFiles>
+      <dataFile>
+        <file>slann-gst.xml</file>
+        <type>gst</type>
+        <version>1.0</version>
+      </dataFile>
+      <dataFile>
+        <file>slann-cat.xml</file>
+        <type>cat</type>
+        <version>1.0</version>
+      </dataFile>
+    </dataFiles>
+  </dataIndex>
+</index>
