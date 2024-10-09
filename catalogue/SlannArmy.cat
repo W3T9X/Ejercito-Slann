@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue id="slannArmy" name="Ejército Slann" revision="2" battleScribeVersion="2.03">
+  <!-- Perfiles Compartidos -->
+  <sharedProfiles>
+    <profile id="unitProfile" name="Estadísticas">
+      <characteristic name="Movimiento" />
+      <characteristic name="Habilidad de Armas" />
+      <characteristic name="Habilidad de Proyectiles" />
+      <characteristic name="Fuerza" />
+      <characteristic name="Resistencia" />
+      <characteristic name="Heridas" />
+      <characteristic name="Iniciativa" />
+      <characteristic name="Ataques" />
+      <characteristic name="Liderazgo" />
+    </profile>
+  </sharedProfiles>
+  <!-- Unidades del Ejército Slann -->
+  <sharedSelectionEntries>
+    <!-- Mago Sacerdote Slann (Comandante) -->
+    <selectionEntry id="commanderSlann" name="Mago Sacerdote Slann" type="unit">
+      <profiles>
+        <profile id="commanderSlannProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="3" />
+          <characteristic name="Habilidad de Proyectiles" value="0" />
+          <characteristic name="Fuerza" value="3" />
+          <characteristic name="Resistencia" value="5" />
+          <characteristic name="Heridas" value="4" />
+          <characteristic name="Iniciativa" value="2" />
+          <characteristic name="Ataques" value="1" />
+          <characteristic name="Liderazgo" value="9" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="specialSave" name="Salvación Especial 4+">
+          <description>El Mago Sacerdote Slann tiene una salvación especial de 4+.</description>
+        </rule>
+        <rule id="telepathy" name="Telepatía">
+          <description>El Mago Sacerdote puede lanzar hechizos desde su aprendiz o el Altar de Guerra.</description>
+        </rule>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>El Mago Sacerdote Slann tiene una salvación especial mejorada de 4+, otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="commander" />
+      </categories>
+      <selectionEntries>
+        <!-- Opciones de generación -->
+        <selectionEntryGroup id="options" name="Opciones Extra">
+          <selectionEntry id="improveGeneration" name="Mejorar Generación" type="upgrade">
+            <profiles>
+              <profile id="improveGenerationProfile" name="Cuarta Generación">
+                <characteristic name="Coste" value="+30" />
+                <rule id="extraPower" name="+2 en Disfunciones Mágicas" />
+              </profile>
+            </profiles>
+          </selectionEntry>
+        </selectionEntryGroup>
+        <!-- Selección de Objetos Mágicos -->
+        <selectionEntry id="magicalItems" name="Objetos Mágicos">
+          <!-- Armas Mágicas -->
+          <selectionEntryGroup id="magicalWeapons" name="Armas Mágicas">
+            <selectionEntry id="swordOfSun" name="Espada del Sol Llameante" type="upgrade">
+              <profiles>
+                <profile id="magicSwordProfile" name="Espada del Sol Llameante">
+                  <rule id="flamingAttacks" name="Ataques Flamígeros" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="45" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+          <!-- Armaduras Mágicas -->
+          <selectionEntryGroup id="magicalArmors" name="Armaduras Mágicas">
+            <selectionEntry id="armorOfAlligator" name="Armadura de Aligator" type="upgrade">
+              <profiles>
+                <profile id="armorOfAlligatorProfile" name="Armadura de Aligator">
+                  <rule id="armorSave" name="Salvación por Armadura 4+" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="20" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+          <!-- Talismán Mágico -->
+          <selectionEntryGroup id="magicalTalismans" name="Talismanes">
+            <selectionEntry id="amuletOfProtection" name="Amuleto de Protección" type="upgrade">
+              <profiles>
+                <profile id="amuletOfProtectionProfile" name="Amuleto de Protección">
+                  <rule id="wardSave" name="Salvación Especial 5+" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="25" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Caudillo Slann (Comandante) -->
+    <selectionEntry id="warlordSlann" name="Caudillo Slann" type="unit">
+      <profiles>
+        <profile id="warlordSlannProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="5" />
+          <characteristic name="Habilidad de Proyectiles" value="2" />
+          <characteristic name="Fuerza" value="4" />
+          <characteristic name="Resistencia" value="5" />
+          <characteristic name="Heridas" value="3" />
+          <characteristic name="Iniciativa" value="4" />
+          <characteristic name="Ataques" value="3" />
+          <characteristic name="Liderazgo" value="9" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="specialSave" name="Salvación Especial 5+">
+          <description>El Caudillo Slann tiene una salvación especial de 5+.</description>
+        </rule>
+        <rule id="exampleToFollow" name="Ejemplo a Seguir">
+          <description>El Caudillo Slann otorga a las unidades cercanas un bonificador de +1 para impactar en combate cuerpo a cuerpo.</description>
+        </rule>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>El Caudillo Slann tiene una salvación especial mejorada de 5+, otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="commander" />
+      </categories>
+      <selectionEntries>
+        <!-- Selección de Objetos Mágicos -->
+        <selectionEntry id="magicalItems" name="Objetos Mágicos">
+          <!-- Armas Mágicas -->
+          <selectionEntryGroup id="magicalWeapons" name="Armas Mágicas">
+            <selectionEntry id="obsidianScythe" name="Guadaña de Obsidiana" type="upgrade">
+              <profiles>
+                <profile id="obsidianScytheProfile" name="Guadaña de Obsidiana">
+                  <rule id="magicalAttacks" name="Ataques Mágicos" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="35" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+          <!-- Armaduras Mágicas -->
+          <selectionEntryGroup id="magicalArmors" name="Armaduras Mágicas">
+            <selectionEntry id="armorOfAlligator" name="Armadura de Aligator" type="upgrade">
+              <profiles>
+                <profile id="armorOfAlligatorProfile" name="Armadura de Aligator">
+                  <rule id="armorSave" name="Salvación por Armadura 4+" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="20" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Heraldo Slann (Héroe) -->
+    <selectionEntry id="heraldSlann" name="Heraldo Slann" type="unit">
+      <profiles>
+        <profile id="heraldSlannProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="4" />
+          <characteristic name="Habilidad de Proyectiles" value="2" />
+          <characteristic name="Fuerza" value="4" />
+          <characteristic name="Resistencia" value="4" />
+          <characteristic name="Heridas" value="2" />
+          <characteristic name="Iniciativa" value="3" />
+          <characteristic name="Ataques" value="2" />
+          <characteristic name="Liderazgo" value="8" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="specialSave" name="Salvación Especial 5+">
+          <description>El Heraldo Slann tiene una salvación especial de 5+.</description>
+        </rule>
+        <rule id="exampleToFollow" name="Ejemplo a Seguir">
+          <description>El Heraldo Slann otorga a las unidades cercanas un bonificador de +1 para impactar en combate cuerpo a cuerpo.</description>
+        </rule>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>El Heraldo Slann tiene una salvación especial de 5+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="hero" />
+      </categories>
+      <selectionEntries>
+        <!-- Selección de Objetos Mágicos -->
+        <selectionEntry id="magicalItems" name="Objetos Mágicos">
+          <!-- Armas Mágicas -->
+          <selectionEntryGroup id="magicalWeapons" name="Armas Mágicas">
+            <selectionEntry id="swordOfSun" name="Espada del Sol Llameante" type="upgrade">
+              <profiles>
+                <profile id="swordOfSunProfile" name="Espada del Sol Llameante">
+                  <rule id="flamingAttacks" name="Ataques Flamígeros" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="45" />
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="obsidianScythe" name="Guadaña de Obsidiana" type="upgrade">
+              <profiles>
+                <profile id="obsidianScytheProfile" name="Guadaña de Obsidiana">
+                  <rule id="magicalAttacks" name="Ataques Mágicos" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="35" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+          <!-- Armaduras Mágicas -->
+          <selectionEntryGroup id="magicalArmors" name="Armaduras Mágicas">
+            <selectionEntry id="armorOfAlligator" name="Armadura de Aligator" type="upgrade">
+              <profiles>
+                <profile id="armorOfAlligatorProfile" name="Armadura de Aligator">
+                  <rule id="armorSave" name="Salvación por Armadura 4+" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="20" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+          <!-- Talismán Mágico -->
+          <selectionEntryGroup id="magicalTalismans" name="Talismanes">
+            <selectionEntry id="amuletOfProtection" name="Amuleto de Protección" type="upgrade">
+              <profiles>
+                <profile id="amuletOfProtectionProfile" name="Amuleto de Protección">
+                  <rule id="wardSave" name="Salvación Especial 5+" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="25" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Aprendiz de Mago Slann (Héroe) -->
+    <selectionEntry id="apprenticeSlann" name="Aprendiz de Mago Slann" type="unit">
+      <profiles>
+        <profile id="apprenticeSlannProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="3" />
+          <characteristic name="Habilidad de Proyectiles" value="0" />
+          <characteristic name="Fuerza" value="3" />
+          <characteristic name="Resistencia" value="4" />
+          <characteristic name="Heridas" value="2" />
+          <characteristic name="Iniciativa" value="3" />
+          <characteristic name="Ataques" value="1" />
+          <characteristic name="Liderazgo" value="8" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="specialSave" name="Salvación Especial 5+">
+          <description>El Aprendiz de Mago Slann tiene una salvación especial de 5+.</description>
+        </rule>
+        <rule id="magicResistance" name="Resistencia Mágica (1)">
+          <description>El Aprendiz de Mago Slann tiene Resistencia Mágica (1), lo que le otorga un dado adicional para dispersar hechizos.</description>
+        </rule>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>El Aprendiz de Mago Slann tiene una salvación especial mejorada de 5+, otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="hero" />
+      </categories>
+      <selectionEntries>
+        <!-- Selección de Objetos Mágicos -->
+        <selectionEntry id="magicalItems" name="Objetos Mágicos">
+          <!-- Armas Mágicas -->
+          <selectionEntryGroup id="magicalWeapons" name="Armas Mágicas">
+            <selectionEntry id="obsidianScythe" name="Guadaña de Obsidiana" type="upgrade">
+              <profiles>
+                <profile id="obsidianScytheProfile" name="Guadaña de Obsidiana">
+                  <rule id="magicalAttacks" name="Ataques Mágicos" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="35" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+          <!-- Armaduras Mágicas -->
+          <selectionEntryGroup id="magicalArmors" name="Armaduras Mágicas">
+            <selectionEntry id="armorOfAlligator" name="Armadura de Aligator" type="upgrade">
+              <profiles>
+                <profile id="armorOfAlligatorProfile" name="Armadura de Aligator">
+                  <rule id="armorSave" name="Salvación por Armadura 4+" />
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Coste" value="20" />
+              </costs>
+            </selectionEntry>
+          </selectionEntryGroup>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Jóvenes Slann de la Jungla (Unidad Básica) -->
+    <selectionEntry id="jungleSlannYouths" name="Jóvenes Slann de la Jungla" type="unit">
+      <profiles>
+        <profile id="jungleSlannYouthsProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="3" />
+          <characteristic name="Habilidad de Proyectiles" value="2" />
+          <characteristic name="Fuerza" value="3" />
+          <characteristic name="Resistencia" value="3" />
+          <characteristic name="Heridas" value="1" />
+          <characteristic name="Iniciativa" value="3" />
+          <characteristic name="Ataques" value="1" />
+          <characteristic name="Liderazgo" value="7" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>Los Jóvenes Slann de la Jungla tienen una salvación especial de 6+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="core" />
+      </categories>
+      <selectionEntries>
+        <!-- Opciones de equipo -->
+        <selectionEntryGroup id="weapons" name="Opciones de Arma">
+          <selectionEntry id="slannBlowpipes" name="Cerbatana Slann" type="upgrade">
+            <profiles>
+              <profile id="slannBlowpipesProfile" name="Cerbatana Slann">
+                <characteristic name="Alcance" value="12" />
+                <characteristic name="Fuerza" value="3" />
+                <rule id="poisonedAttacks" name="Ataques Envenenados" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="2" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="slannThrowingAxes" name="Hachas Arrojadizas" type="upgrade">
+            <profiles>
+              <profile id="slannThrowingAxesProfile" name="Hachas Arrojadizas">
+                <characteristic name="Alcance" value="8" />
+                <characteristic name="Fuerza" value="4" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="2" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+        <!-- Grupo de Mando -->
+        <selectionEntryGroup id="groupCommand" name="Grupo de Mando">
+          <selectionEntry id="champion" name="Campeón" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+5" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="musician" name="Músico" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+5" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="standardBearer" name="Portaestandartes" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+5" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Slann Jungle Braves (Unidad Básica) -->
+    <selectionEntry id="jungleBraves" name="Slann Jungle Braves" type="unit">
+      <profiles>
+        <profile id="jungleBravesProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="3" />
+          <characteristic name="Habilidad de Proyectiles" value="2" />
+          <characteristic name="Fuerza" value="3" />
+          <characteristic name="Resistencia" value="3" />
+          <characteristic name="Heridas" value="1" />
+          <characteristic name="Iniciativa" value="3" />
+          <characteristic name="Ataques" value="1" />
+          <characteristic name="Liderazgo" value="7" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>Los Slann Jungle Braves tienen una salvación especial de 6+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="core" />
+      </categories>
+      <selectionEntries>
+        <!-- Opciones de equipo -->
+        <selectionEntryGroup id="weapons" name="Opciones de Arma">
+          <selectionEntry id="slannBlowpipes" name="Cerbatana Slann" type="upgrade">
+            <profiles>
+              <profile id="slannBlowpipesProfile" name="Cerbatana Slann">
+                <characteristic name="Alcance" value="12" />
+                <characteristic name="Fuerza" value="3" />
+                <rule id="poisonedAttacks" name="Ataques Envenenados" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="2" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="slannThrowingAxes" name="Hachas Arrojadizas" type="upgrade">
+            <profiles>
+              <profile id="slannThrowingAxesProfile" name="Hachas Arrojadizas">
+                <characteristic name="Alcance" value="8" />
+                <characteristic name="Fuerza" value="4" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="2" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+        <!-- Grupo de Mando -->
+        <selectionEntryGroup id="groupCommand" name="Grupo de Mando">
+          <selectionEntry id="champion" name="Campeón" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+5" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="musician" name="Músico" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+5" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="standardBearer" name="Portaestandartes" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+5" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Slann Scouts (Unidad Básica) -->
+    <selectionEntry id="slannScouts" name="Exploradores Slann" type="unit">
+      <profiles>
+        <profile id="slannScoutsProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="3" />
+          <characteristic name="Habilidad de Proyectiles" value="2" />
+          <characteristic name="Fuerza" value="3" />
+          <characteristic name="Resistencia" value="3" />
+          <characteristic name="Heridas" value="1" />
+          <characteristic name="Iniciativa" value="4" />
+          <characteristic name="Ataques" value="1" />
+          <characteristic name="Liderazgo" value="7" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="skirmishers" name="Hostigadores">
+          <description>Los Exploradores Slann son hostigadores, lo que les otorga -1 a ser impactados por disparos.</description>
+        </rule>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>Los Exploradores Slann tienen una salvación especial de 6+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="core" />
+      </categories>
+      <selectionEntries>
+        <!-- Opciones de equipo -->
+        <selectionEntryGroup id="weapons" name="Opciones de Arma">
+          <selectionEntry id="slannBlowpipes" name="Cerbatana Slann" type="upgrade">
+            <profiles>
+              <profile id="slannBlowpipesProfile" name="Cerbatana Slann">
+                <characteristic name="Alcance" value="12" />
+                <characteristic name="Fuerza" value="3" />
+                <rule id="poisonedAttacks" name="Ataques Envenenados" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="2" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="slannThrowingKnives" name="Cuchillos Arrojadizos" type="upgrade">
+            <profiles>
+              <profile id="slannThrowingKnivesProfile" name="Cuchillos Arrojadizos">
+                <characteristic name="Alcance" value="6" />
+                <characteristic name="Fuerza" value="3" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="1" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+        <!-- Grupo de Mando -->
+        <selectionEntryGroup id="groupCommand" name="Grupo de Mando">
+          <selectionEntry id="champion" name="Campeón" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+6" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="musician" name="Músico" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+6" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="standardBearer" name="Portaestandartes" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+6" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Human Slaves (Unidad Básica) -->
+    <selectionEntry id="humanSlaves" name="Esclavos Humanos" type="unit">
+      <profiles>
+        <profile id="humanSlavesProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="2" />
+          <characteristic name="Habilidad de Proyectiles" value="2" />
+          <characteristic name="Fuerza" value="3" />
+          <characteristic name="Resistencia" value="3" />
+          <characteristic name="Heridas" value="1" />
+          <characteristic name="Iniciativa" value="3" />
+          <characteristic name="Ataques" value="1" />
+          <characteristic name="Liderazgo" value="5" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="instability" name="Inestabilidad">
+          <description>Los Esclavos Humanos pueden ser inmunes a psicología, pero deben pasar una tirada que los perjudique.</description>
+        </rule>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>Los Esclavos Humanos tienen una salvación especial de 6+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="core" />
+      </categories>
+    </selectionEntry>
+    <!-- Trogloditas (Unidad Especial) -->
+    <selectionEntry id="troglodytes" name="Trogloditas" type="unit">
+      <profiles>
+        <profile id="troglodytesProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="5" />
+          <characteristic name="Habilidad de Armas" value="3" />
+          <characteristic name="Habilidad de Proyectiles" value="0" />
+          <characteristic name="Fuerza" value="4" />
+          <characteristic name="Resistencia" value="4" />
+          <characteristic name="Heridas" value="2" />
+          <characteristic name="Iniciativa" value="1" />
+          <characteristic name="Ataques" value="3" />
+          <characteristic name="Liderazgo" value="6" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="odorous" name="Hedor Repulsivo">
+          <description>Los Trogloditas emiten un hedor repulsivo que afecta a las unidades no reptilianas.</description>
+        </rule>
+        <rule id="ferocious" name="Feroz">
+          <description>Los Trogloditas son extremadamente feroces y atacarán a sus enemigos sin tregua.</description>
+        </rule>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>Los Trogloditas tienen una salvación especial de 6+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="special" />
+      </categories>
+    </selectionEntry>
+    <!-- Bandas Progenie (Unidad Especial) -->
+    <selectionEntry id="spawnBands" name="Bandas Progenie" type="unit">
+      <profiles>
+        <profile id="spawnBandsProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="2" />
+          <characteristic name="Habilidad de Proyectiles" value="0" />
+          <characteristic name="Fuerza" value="3" />
+          <characteristic name="Resistencia" value="3" />
+          <characteristic name="Heridas" value="1" />
+          <characteristic name="Iniciativa" value="3" />
+          <characteristic name="Ataques" value="1" />
+          <characteristic name="Liderazgo" value="6" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>Las Bandas Progenie tienen una salvación especial de 6+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="special" />
+      </categories>
+      <selectionEntries>
+        <!-- Opciones de equipo -->
+        <selectionEntryGroup id="weapons" name="Opciones de Arma">
+          <selectionEntry id="club" name="Clava" type="upgrade">
+            <profiles>
+              <profile id="clubProfile" name="Clava">
+                <characteristic name="Fuerza" value="4" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="2" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+      </selectionEntries>
+    </selectionEntry>
+    <!-- Guerreros Aligator (Unidad Especial) -->
+    <selectionEntry id="alligatorWarriors" name="Guerreros Aligator" type="unit">
+      <profiles>
+        <profile id="alligatorWarriorsProfile" typeId="unitProfile" name="Estadísticas">
+          <characteristic name="Movimiento" value="4" />
+          <characteristic name="Habilidad de Armas" value="3" />
+          <characteristic name="Habilidad de Proyectiles" value="0" />
+          <characteristic name="Fuerza" value="4" />
+          <characteristic name="Resistencia" value="4" />
+          <characteristic name="Heridas" value="2" />
+          <characteristic name="Iniciativa" value="2" />
+          <characteristic name="Ataques" value="2" />
+          <characteristic name="Liderazgo" value="8" />
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="protectedByAncestors" name="Protegido por los Ancestrales">
+          <description>Los Guerreros Aligator tienen una salvación especial de 6+ otorgada por los Ancestrales.</description>
+        </rule>
+      </rules>
+      <categories>
+        <categoryLink id="special" />
+      </categories>
+      <selectionEntries>
+        <!-- Opciones de equipo -->
+        <selectionEntryGroup id="weapons" name="Opciones de Arma">
+          <selectionEntry id="alligatorShield" name="Escudo" type="upgrade">
+            <profiles>
+              <profile id="alligatorShieldProfile" name="Escudo">
+                <characteristic name="Salvación" value="4" />
+              </profile>
+            </profiles>
+            <costs>
+              <cost name="Coste" value="5" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+        <!-- Grupo de Mando -->
+        <selectionEntryGroup id="groupCommand" name="Grupo de Mando">
+          <selectionEntry id="champion" name="Campeón" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+6" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="musician" name="Músico" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+6" />
+            </costs>
+          </selectionEntry>
+          <selectionEntry id="standardBearer" name="Portaestandartes" type="upgrade">
+            <costs>
+              <cost name="Coste" value="+6" />
+            </costs>
+          </selectionEntry>
+        </selectionEntryGroup>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
