@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue>
+  <unidadesComandantes>
+    <unit>
+      <name>Mago Sacerdote Slann</name>
+      <cost>150</cost>
+      <attributes>
+        <M>4</M>
+        <HA>3</HA>
+        <HP>4</HP>
+        <F>3</F>
+        <R>5</R>
+        <H>4</H>
+        <I>2</I>
+        <A>1</A>
+        <L>9</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Ojo de la Tormenta (+15)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Salvación Especial 4+</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+        <rule>Telepatía</rule>
+      </specialRules>
+    </unit>
+    <unit>
+      <name>Caudillo Slann</name>
+      <cost>180</cost>
+      <attributes>
+        <M>4</M>
+        <HA>5</HA>
+        <HP>3</HP>
+        <F>4</F>
+        <R>5</R>
+        <H>3</H>
+        <I>4</I>
+        <A>3</A>
+        <L>9</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Escudo (+1)</option>
+        <option>Arma a dos manos (+2)</option>
+        <option>Guerrero Jaguar (+20)</option>
+        <option>Guerrero Águila (+20)</option>
+        <option>Guerrero Aligator (+20)</option>
+        <option>Venom Tribe (+20)</option>
+        <option>Guerrero Sacerdote (+20)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Salvación Especial 5+</rule>
+        <rule>Ejemplo a Seguir</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+  </unidadesComandantes>
+  <unidadesHeroes>
+    <unit>
+      <name>Heraldo Slann</name>
+      <cost>100</cost>
+      <attributes>
+        <M>4</M>
+        <HA>4</HA>
+        <HP>2</HP>
+        <F>4</F>
+        <R>4</R>
+        <H>2</H>
+        <I>3</I>
+        <A>2</A>
+        <L>8</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Portaestandarte de Batalla (+25)</option>
+      </options>
+      <commandGroup>
+        <champion cost="0"/>
+        <musician cost="0"/>
+        <standardBearer cost="0"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Salvación Especial 5+</rule>
+        <rule>Ejemplo a Seguir</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+  </unidadesHeroes>
+  <unidadesBasicas>
+    <unit>
+      <name>Jóvenes Slann de la Jungla</name>
+      <cost>6</cost>
+      <attributes>
+        <M>4</M>
+        <HA>3</HA>
+        <HP>1</HP>
+        <F>3</F>
+        <R>3</R>
+        <H>1</H>
+        <I>3</I>
+        <A>1</A>
+        <L>7</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Arma adicional (+1)</option>
+        <option>Javalinas (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="4"/>
+        <musician cost="4"/>
+        <standardBearer cost="4"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Naturaleza Anfibia</rule>
+        <rule>Sangre Fría</rule>
+        <rule>Disciplina Militar</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+    <unit>
+      <name>Bandas Progenie Slann</name>
+      <cost>8</cost>
+      <attributes>
+        <M>4</M>
+        <HA>3</HA>
+        <HP>2</HP>
+        <F>3</F>
+        <R>4</R>
+        <H>1</H>
+        <I>3</I>
+        <A>1</A>
+        <L>7</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Escudo (+1)</option>
+        <option>Arma adicional (+2)</option>
+        <option>Lanzas (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="4"/>
+        <musician cost="4"/>
+        <standardBearer cost="4"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Naturaleza Anfibia</rule>
+        <rule>Sangre Fría</rule>
+        <rule>Disciplina Militar</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+    <unit>
+      <name>Esclavos Humanos</name>
+      <cost>3</cost>
+      <attributes>
+        <M>4</M>
+        <HA>2</HA>
+        <HP>2</HP>
+        <F>3</F>
+        <R>3</R>
+        <H>1</H>
+        <I>3</I>
+        <A>1</A>
+        <L>5</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Escudo (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="4"/>
+        <musician cost="4"/>
+        <standardBearer cost="4"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Lobotomizados</rule>
+        <rule>Inestables</rule>
+        <rule>Carne de Cañón</rule>
+        <rule>Sacrificio Mágico</rule>
+      </specialRules>
+    </unit>
+  </unidadesBasicas>
+  <unidadesEspeciales>
+    <unit>
+      <name>Guerreros Jaguar</name>
+      <cost>13</cost>
+      <attributes>
+        <M>4</M>
+        <HA>4</HA>
+        <HP>3</HP>
+        <F>3</F>
+        <R>4</R>
+        <H>1</H>
+        <I>4</I>
+        <A>2</A>
+        <L>8</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Hachas arrojadizas (+3)</option>
+        <option>Javalinas (+1)</option>
+        <option>Arma de mano adicional (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Furia Asesina</rule>
+        <rule>Naturaleza Anfibia</rule>
+        <rule>Sangre Fría</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+    <unit>
+      <name>Alligator Warriors</name>
+      <cost>10</cost>
+      <attributes>
+        <M>4</M>
+        <HA>4</HA>
+        <HP>3</HP>
+        <F>4</F>
+        <R>5</R>
+        <H>1</H>
+        <I>3</I>
+        <A>2</A>
+        <L>8</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Escudo (+1)</option>
+        <option>Arma de mano adicional (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Inmunes a Psicología</rule>
+        <rule>Naturaleza Anfibia</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+    <unit>
+      <name>Guerreros Águila</name>
+      <cost>15</cost>
+      <attributes>
+        <M>4</M>
+        <HA>5</HA>
+        <HP>3</HP>
+        <F>3</F>
+        <R>4</R>
+        <H>1</H>
+        <I>3</I>
+        <A>2</A>
+        <L>8</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Arma de mano adicional (+1)</option>
+        <option>Escudo (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Inmunes a Psicología</rule>
+        <rule>Naturaleza Anfibia</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+    <unit>
+      <name>Venom Tribes</name>
+      <cost>10</cost>
+      <attributes>
+        <M>4</M>
+        <HA>4</HA>
+        <HP>3</HP>
+        <F>4</F>
+        <R>4</R>
+        <H>1</H>
+        <I>3</I>
+        <A>2</A>
+        <L>7</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Escudo (+1)</option>
+        <option>Arma de mano adicional (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Inmunes a Psicología</rule>
+        <rule>Naturaleza Anfibia</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+    <unit>
+      <name>Hombres Lagarto Primitivos</name>
+      <cost>5</cost>
+      <attributes>
+        <M>4</M>
+        <HA>3</HA>
+        <HP>1</HP>
+        <F>4</F>
+        <R>4</R>
+        <H>1</H>
+        <I>2</I>
+        <A>1</A>
+        <L>6</L>
+      </attributes>
+      <type>Infantería</type>
+      <baseSize>25x25</baseSize>
+      <options>
+        <option>Escudo (+1)</option>
+        <option>Lanza (+1)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Sangre Fría</rule>
+        <rule>Piel Escamosa (5+)</rule>
+        <rule>Protegidos por los Ancestrales</rule>
+      </specialRules>
+    </unit>
+  </unidadesEspeciales>
+  <unidadesSingulares>
+    <unit>
+      <name>Trogloditas</name>
+      <cost>45</cost>
+      <attributes>
+        <M>6</M>
+        <HA>3</HA>
+        <HP>3</HP>
+        <F>5</F>
+        <R>5</R>
+        <H>3</H>
+        <I>2</I>
+        <A>3</A>
+        <L>6</L>
+      </attributes>
+      <type>Infantería monstruosa</type>
+      <baseSize>40x40</baseSize>
+      <options>
+        <option>Escudo (+2)</option>
+        <option>Arma de mano adicional (+3)</option>
+        <option>Arma a dos manos (+4)</option>
+      </options>
+      <commandGroup>
+        <champion cost="6"/>
+        <musician cost="6"/>
+        <standardBearer cost="6"/>
+      </commandGroup>
+      <specialRules>
+        <rule>Estupidez</rule>
+        <rule>Causa Miedo</rule>
+        <rule>Naturaleza Anfibia</rule>
+      </specialRules>
+    </unit>
+  </unidadesSingulares>
+</catalogue>
