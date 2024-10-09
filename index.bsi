@@ -1,9 +1,0 @@
-version: 1
-repository: Slann Repository
-lastModified: 2024-10-09
-updateUrl: https://github.com/W3T9X/Ejercito-Slann/raw/main/index.bsi
-catalogue:
-  - id: slann-codex
-    name: Slann Codex
-    file: catalogue/SlannArmy.cat
-    lastModified: 2024-10-09
